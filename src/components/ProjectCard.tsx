@@ -29,8 +29,9 @@ export function ProjectCard({
       href={resolvedHref}
       target={clickable ? "_blank" : undefined}
       rel={clickable ? "noreferrer" : undefined}
-      className="group block overflow-hidden rounded-2xl border border-zinc-200 bg-white shadow-soft transition hover:-translate-y-0.5 hover:shadow-md dark:border-zinc-800 dark:bg-zinc-900"
+      className="group block overflow-hidden rounded-2xl border border-zinc-800 bg-zinc-900 shadow-soft transition hover:-translate-y-0.5 hover:shadow-md"
     >
+
       {/* IMAGE HEADER */}
       <div className="relative aspect-[16/9] w-full bg-zinc-100 dark:bg-zinc-800">
         <Image

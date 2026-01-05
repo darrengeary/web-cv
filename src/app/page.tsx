@@ -11,7 +11,7 @@ export default function HomePage() {
   return (
     <Container className="py-10">
       {/* HERO */}
-      <div className="rounded-3xl border border-zinc-200 bg-white p-8 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+      <div className="rounded-3xl border border-zinc-800 bg-zinc-900 p-8 shadow-soft">
         <div className="flex flex-col gap-4 sm:flex-row sm:items-start sm:justify-between">
           <div>
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
@@ -99,7 +99,7 @@ export default function HomePage() {
       {/* SKILLS */}
       <Section title="Skills">
         <div className="grid gap-4 sm:grid-cols-3">
-          <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
             <div className="font-semibold">Strong</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {profile.skills.strong.map((s) => (
@@ -107,7 +107,8 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
+
             <div className="font-semibold">Working knowledge</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {profile.skills.working.map((s) => (
@@ -115,7 +116,8 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-          <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+          <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
+
             <div className="font-semibold">Exposure</div>
             <div className="mt-3 flex flex-wrap gap-2">
               {profile.skills.exposure.map((s) => (
@@ -133,7 +135,7 @@ export default function HomePage() {
 
       {/* INTERESTS */}
       <Section title="Interests">
-        <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+        <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
           <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-200">
             {profile.interests.map((i) => (
               <li key={i}>{i}</li>

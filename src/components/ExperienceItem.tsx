@@ -10,7 +10,8 @@ export function ExperienceItem({
   bullets: readonly string[];
 }) {
   return (
-    <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
+    <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
+
       <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
         <div>
           <div className="text-sm text-zinc-600 dark:text-zinc-400">{company}</div>
