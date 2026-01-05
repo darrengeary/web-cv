@@ -2,7 +2,7 @@
 
 /* optional: keep dark mode sane */
 :root {
-  color-scheme: light;
+  color-scheme: dark;
 }
 @media (prefers-color-scheme: dark) {
   :root {
