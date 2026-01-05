@@ -1,5 +1,6 @@
 import { Container } from "@/components/Container";
 import { profile } from "@/lib/profile";
+import Image from "next/image";
 
 export function Footer() {
   return (
@@ -8,17 +9,50 @@ export function Footer() {
         <p className="text-sm text-zinc-600 dark:text-zinc-400">
           © {new Date().getFullYear()} {profile.name}
         </p>
-        <div className="flex gap-4 text-sm">
-          <a className="text-zinc-700 hover:underline dark:text-zinc-300" href={profile.links.github}>
-            GitHub
-          </a>
-          <a className="text-zinc-700 hover:underline dark:text-zinc-300" href={profile.links.linkedin}>
-            LinkedIn
-          </a>
-          <a className="text-zinc-700 hover:underline dark:text-zinc-300" href={`mailto:${profile.links.email}`}>
-            Email
-          </a>
-        </div>
+          <div className="flex flex-wrap gap-2">
+          {/* LinkedIn */}
+            <a
+              href={profile.links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/linkedin2.png"
+                alt="LinkedIn"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
+
+            {/* GitHub */}
+            <a
+              href={profile.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/github.svg"
+                alt="GitHub"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
+
+            {/* Email (icon, not text) */}
+            <a
+              href={`mailto:${profile.links.email}`}
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/gmail.svg"
+                alt="Email"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
+          </div>
       </Container>
     </footer>
   );

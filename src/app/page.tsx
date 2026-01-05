@@ -22,34 +22,48 @@ export default function HomePage() {
           </div>
 
           <div className="flex flex-wrap gap-2">
-          <a
-            href={profile.links.linkedin}
-            target="_blank"
-            rel="noreferrer"
-            className="inline-flex items-center justify-center rounded-xl bg-zinc-900 p-2 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-200"
-          >
-            <Image
-              src="/linkedin2.png"
-              alt="LinkedIn"
-              width={20}
-              height={20}
-              className="invert dark:invert-0"
-            />
-          </a>
+          {/* LinkedIn */}
             <a
-            href={`mailto:${profile.links.email}`}
-            className="inline-flex items-center justify-center rounded-xl bg-zinc-900 p-2 hover:bg-zinc-800 dark:bg-zinc-100 dark:hover:bg-zinc-200"
-            target="_blank"
-            rel="noreferrer"
-          >
-            <Image
-              src="/linkedin2.png"
-              alt="LinkedIn"
-              width={20}
-              height={20}
-              className="invert dark:invert-0"
-            />
-          </a>
+              href={profile.links.linkedin}
+              target="_blank"
+              rel="noreferrer"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/linkedin2.png"
+                alt="LinkedIn"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
+
+            {/* GitHub */}
+            <a
+              href={profile.links.github}
+              target="_blank"
+              rel="noreferrer"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/github.svg"
+                alt="GitHub"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
+
+            {/* Email (icon, not text) */}
+            <a
+              href={`mailto:${profile.links.email}`}
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+            >
+              <Image
+                src="/gmail.svg"
+                alt="Email"
+                fill
+                className="object-contain p-2 invert dark:invert-0"
+              />
+            </a>
           </div>
         </div>
 
@@ -65,10 +79,19 @@ export default function HomePage() {
       </div>
 
       {/* EXPERIENCE */}
-      <Section title="Experience">
+      <Section title="Work Experience">
         <div className="grid gap-4">
           {profile.experience.map((e) => (
             <ExperienceItem key={`${e.company}-${e.role}`} {...e} />
+          ))}
+        </div>
+      </Section>
+
+      {/* PROJECTS (preview) */}
+      <Section title="Projects">
+        <div className="grid gap-4 sm:grid-cols-2">
+          {profile.projects.slice(0, 4).map((p) => (
+            <ProjectCard key={p.name} {...p} />
           ))}
         </div>
       </Section>
@@ -100,15 +123,6 @@ export default function HomePage() {
               ))}
             </div>
           </div>
-        </div>
-      </Section>
-
-      {/* PROJECTS (preview) */}
-      <Section title="Projects">
-        <div className="grid gap-4 sm:grid-cols-2">
-          {profile.projects.slice(0, 4).map((p) => (
-            <ProjectCard key={p.name} {...p} />
-          ))}
         </div>
       </Section>
 

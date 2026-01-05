@@ -6,16 +6,27 @@ export const profile = {
     "I build software and dashboards that improve incident response and production visibility.",
   links: {
     email: "gearydarren@gmail.com",
-    github: "https://github.com/yourhandle",
+    github: "https://github.com/darrengeary",
     linkedin: "https://linkedin.com/in/darren-geary",
     resumePdf: "/resume.pdf", // put a file in /public/resume.pdf
   },
   highlights: [
-    "Incident response (P0/P1), structured debugging, root cause analysis",
-    "Grafana dashboards, logs/metrics correlation, Reliability",
-    "TypeScript/React/Next.js, Java + integration work",
+    "Incident response, triage and debugging, root cause analysis",
+    "Grafana dashboards, Logs/metrics Correlation, Reliability",
+    "TypeScript/React/Next.js, Java, SQL and Databases",
   ],
 experience: [
+  {
+  company: "LunchLog.ie",
+  role: "Software Engineer",
+  dates: "Full-time | Sep 2024 — Present",
+  bullets: [
+    "Designed and built a production web application independently using Next.js.",
+    "Defined application architecture, data models, and overall design without external direction.",
+    "Implemented core product features end-to-end, from UI through backend logic to deployment.",
+    "Iterated on the product improvements based on user feedback.",
+  ],
+},
   {
     company: "Sky, London",
     role: "Technical Analyst",
@@ -82,14 +93,16 @@ experience: [
       description:
         "Improved visibility into frontend data pipelines by refining Grafana dashboards and alerts, making previously hard-to-detect issues obvious during incidents.",
       tags: ["Grafana", "Observability", "Dynatrace", "ContentSquare", "Kibana"],
-      href: "#",
+      href: "sky.com",
+      image: "/grafana.png",
     },
     {
       name: "LunchLog (School Lunch Ordering)",
       description:
-        "A digital lunch ordering system for Irish schools and suppliers: allergy tracking, parent ordering, daily order lists, paperless workflows.",
-      tags: ["Next.js", "TypeScript", "Product thinking"],
-      href: "#", // link to demo/GitHub when ready
+        "Created a digital lunch ordering system for Irish schools and suppliers: allergy tracking, parent ordering, daily order lists, paperless workflows.",
+      tags: ["Next.js", "TypeScript", "Postgres", "Project Management"],
+      href: "lunchlog.ie", // link to demo/GitHub when ready
+      image: "/lunchlog.webp",
     },
   ],
   interests: [
