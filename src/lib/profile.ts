@@ -1,3 +1,10 @@
+type Experience = {
+  company: string;
+  role: string;
+  dates: string;
+  bullets: readonly string[];
+};
+
 export const profile = {
   name: "Darren Geary",
   title: "Software Engineer | Incident Response | Production Observability",

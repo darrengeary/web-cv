@@ -7,7 +7,7 @@ export function ExperienceItem({
   company: string;
   role: string;
   dates: string;
-  bullets: string[];
+  bullets: readonly string[];
 }) {
   return (
     <div className="rounded-2xl border border-zinc-200 bg-white p-5 shadow-soft dark:border-zinc-800 dark:bg-zinc-900">
