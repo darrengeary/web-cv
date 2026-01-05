@@ -33,7 +33,7 @@ export function ProjectCard({
     >
 
       {/* IMAGE HEADER */}
-      <div className="relative aspect-[16/9] w-full bg-zinc-100 dark:bg-zinc-800">
+      <div className="relative aspect-[16/9] w-full bg-zinc-100">
         <Image
           src={image}
           alt={name}
@@ -47,12 +47,12 @@ export function ProjectCard({
         <div className="text-base font-semibold">{name}</div>
 
         {href && (
-          <div className="mt-1 text-xs text-zinc-500 dark:text-zinc-400">
+          <div className="mt-1 text-xs text-zinc-500">
             {href}
           </div>
         )}
 
-        <p className="mt-2 text-sm text-zinc-700 dark:text-zinc-200">
+        <p className="mt-2 text-sm text-zinc-700">
           {description}
         </p>
 

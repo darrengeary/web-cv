@@ -14,12 +14,12 @@ export function ExperienceItem({
 
       <div className="flex flex-col gap-1 sm:flex-row sm:items-baseline sm:justify-between">
         <div>
-          <div className="text-sm text-zinc-600 dark:text-zinc-400">{company}</div>
+          <div className="text-sm text-zinc-600">{company}</div>
           <div className="text-base font-semibold">{role}</div>
         </div>
-        <div className="text-sm text-zinc-600 dark:text-zinc-400">{dates}</div>
+        <div className="text-sm text-zinc-600">{dates}</div>
       </div>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-200">
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-700">
         {bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}

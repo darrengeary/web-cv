@@ -17,8 +17,8 @@ export default function HomePage() {
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               {profile.name}
             </h1>
-            <p className="mt-2 text-zinc-700 dark:text-zinc-200">{profile.title}</p>
-            <p className="mt-1 text-sm text-zinc-600 dark:text-zinc-400">{profile.location}</p>
+            <p className="mt-2 text-zinc-700">{profile.title}</p>
+            <p className="mt-1 text-sm text-zinc-600">{profile.location}</p>
           </div>
 
           <div className="flex flex-wrap gap-2">
@@ -27,13 +27,13 @@ export default function HomePage() {
               href={profile.links.linkedin}
               target="_blank"
               rel="noreferrer"
-              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200"
             >
               <Image
                 src="/linkedin2.png"
                 alt="LinkedIn"
                 fill
-                className="object-contain p-2 invert dark:invert-0"
+                className="object-contain p-2"
               />
             </a>
 
@@ -42,32 +42,32 @@ export default function HomePage() {
               href={profile.links.github}
               target="_blank"
               rel="noreferrer"
-              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 "
             >
               <Image
                 src="/github.svg"
                 alt="GitHub"
                 fill
-                className="object-contain p-2 invert dark:invert-0"
+                className="object-contain p-2"
               />
             </a>
 
             {/* Email (icon, not text) */}
             <a
               href={`mailto:${profile.links.email}`}
-              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200 dark:hover:bg-zinc-800"
+              className="relative flex h-10 w-10 items-center justify-center rounded-xl hover:bg-zinc-200"
             >
               <Image
                 src="/gmail.svg"
                 alt="Email"
                 fill
-                className="object-contain p-2 invert dark:invert-0"
+                className="object-contain p-2"
               />
             </a>
           </div>
         </div>
 
-        <p className="mt-6 max-w-3xl text-zinc-700 dark:text-zinc-200">
+        <p className="mt-6 max-w-3xl text-zinc-700">
           {profile.tagline}
         </p>
 
@@ -136,7 +136,7 @@ export default function HomePage() {
       {/* INTERESTS */}
       <Section title="Interests">
         <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
-          <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700 dark:text-zinc-200">
+          <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700">
             {profile.interests.map((i) => (
               <li key={i}>{i}</li>
             ))}
