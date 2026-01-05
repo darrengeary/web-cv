@@ -1,21 +1,11 @@
 @import "tailwindcss";
 
-/* optional: keep dark mode sane */
-:root {
-  color-scheme: dark;
-}
-@media (prefers-color-scheme: dark) {
-  :root {
-    color-scheme: dark;
-  }
-}
-
 html, body {
   height: 100%;
 }
 
 @layer base {
   body {
-    @apply bg-zinc-50 text-zinc-900 dark:bg-zinc-950 dark:text-zinc-100 antialiased;
+    @apply bg-zinc-950 text-zinc-100 antialiased;
   }
 }
