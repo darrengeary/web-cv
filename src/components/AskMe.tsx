@@ -29,7 +29,7 @@ export function AskMe({ items }: { items: { q: string; a: string }[] }) {
                 <ChevronDown className={cn("h-4 w-4 transition", open && "rotate-180")} />
               </div>
               {open && (
-                <p className="mt-3 text-sm text-zinc-700">{it.a}</p>
+                <p className="mt-3 text-sm ">{it.a}</p>
               )}
             </button>
           );

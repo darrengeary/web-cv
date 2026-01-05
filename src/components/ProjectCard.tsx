@@ -52,7 +52,7 @@ export function ProjectCard({
           </div>
         )}
 
-        <p className="mt-2 text-sm text-zinc-700">
+        <p className="mt-2 text-sm ">
           {description}
         </p>
 

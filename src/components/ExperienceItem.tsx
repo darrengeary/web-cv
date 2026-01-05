@@ -19,7 +19,7 @@ export function ExperienceItem({
         </div>
         <div className="text-sm text-zinc-600">{dates}</div>
       </div>
-      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm text-zinc-700">
+      <ul className="mt-4 list-disc space-y-2 pl-5 text-sm ">
         {bullets.map((b, i) => (
           <li key={i}>{b}</li>
         ))}

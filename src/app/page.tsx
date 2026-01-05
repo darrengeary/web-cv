@@ -17,7 +17,7 @@ export default function HomePage() {
             <h1 className="text-2xl font-semibold tracking-tight sm:text-3xl">
               {profile.name}
             </h1>
-            <p className="mt-2 text-zinc-700">{profile.title}</p>
+            <p className="mt-2 ">{profile.title}</p>
             <p className="mt-1 text-sm text-zinc-600">{profile.location}</p>
           </div>
 
@@ -67,7 +67,7 @@ export default function HomePage() {
           </div>
         </div>
 
-        <p className="mt-6 max-w-3xl text-zinc-700">
+        <p className="mt-6 max-w-3xl ">
           {profile.tagline}
         </p>
 
@@ -136,7 +136,7 @@ export default function HomePage() {
       {/* INTERESTS */}
       <Section title="Interests">
         <div className="rounded-2xl border border-zinc-800 bg-zinc-900 p-5 shadow-soft">
-          <ul className="list-disc space-y-2 pl-5 text-sm text-zinc-700">
+          <ul className="list-disc space-y-2 pl-5 text-sm ">
             {profile.interests.map((i) => (
               <li key={i}>{i}</li>
             ))}
